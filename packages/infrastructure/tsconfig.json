@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "lib": ["esnext"],
+    "types": ["node"],
+    "moduleResolution": "node",
+    "outDir": "cjs",
+    "incremental": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "resolveJsonModule": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "noEmit": false,
+    "strictPropertyInitialization": true,
+    "skipLibCheck": true,
+    "baseUrl": "src",
+    "isolatedModules": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", ".heft", "cdk.out"]
+}

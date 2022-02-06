@@ -1,0 +1,28 @@
+{
+  "name": "qr-manager",
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "backend:bootstrap": "yarn workspace @qr/infrastructure bootstrap",
+    "backend:diff": "yarn workspace @qr/infrastructure diff",
+    "backend:deploy": "yarn workspace @qr/infrastructure deploy",
+    "backend:destroy": "yarn workspace @qr/infrastructure destroy",
+    "build": "lerna run --concurrency 1 --stream build",
+    "clean": "lerna run --stream clean",
+    "prettify": "prettier --list-different --write \"./**/*.{json,ts,tsx}\""
+  },
+  "devDependencies": {
+    "lerna": "~4.0.0",
+    "prettier": "~2.5.1"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/heft",
+      "**/heft/**"
+    ]
+  }
+}
